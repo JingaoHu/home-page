@@ -2,6 +2,9 @@
 layout: default
 title: My Home-Page
 ---
+
+<h2>{{ page.title }}</h2>
+
 <p>技术</p>
 <ul>
 　　　　{% for post in site.posts %}
@@ -9,7 +12,6 @@ title: My Home-Page
 　　　　{% endfor %}
 </ul>
 
-<h2>{{ page.title }}</h2>
 <p>杂文</p>
 <ul>
 　　　　{% for post in site.posts %}
