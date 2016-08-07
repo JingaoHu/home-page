@@ -7,7 +7,7 @@ title: My Home-Page
 
 <p>技术</p>
 <ul>
-　　　　{% for tech in site.posts %}
+　　　　{% for tech in site.posts.techs %}
 　　　　　　<li>{{ tech.date | date_to_string }} <a href="{{ site.baseurl }}{{ tech.url }}">{{ tech.title }}</a></li>
 　　　　{% endfor %}
 </ul>
